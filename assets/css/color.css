@@ -351,3 +351,12 @@
 .content_block_six .content-box .inner-box .single-item h3 a:hover{
   color: #ff6f29;
 }
+
+div.camp_descriptions p {
+	color: white;
+}
+
+div.camp_descriptions_dark p {
+	color: purple;
+}
+
