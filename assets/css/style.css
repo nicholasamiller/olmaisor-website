@@ -160,7 +160,7 @@ textarea:focus{
 p{
   position: relative;
   font-family: 'Rubik', sans-serif ;
-  color: #7c6f68;
+ 
   margin: 0px;
   transition: all 500ms ease;
 }
