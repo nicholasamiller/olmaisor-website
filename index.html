@@ -12,6 +12,7 @@
     <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
 
     <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
     <link
         href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
@@ -19,88 +20,6 @@
     <!-- Stylesheets -->
      <!-- Combined and Minified Stylesheet -->
 <link href="assets/css/combined.min.css" rel="stylesheet">
-
-<style>
-    /* Navbar Book Now button + layout */
-    .main-header .menu-right-content,
-    .sticky-header .menu-right-content {
-        display: flex;
-        align-items: center;
-        gap: 12px; /* space between WhatsApp/call and button */
-    }
-
-        /* Hide WhatsApp/chat icon and any circular background */
-        .main-header .support-box .icon,
-        .sticky-header .support-box .icon {
-            display: none !important;
-            background: none !important;
-        }
-        /* Align WhatsApp icon and phone number horizontally */
-        .main-header .support-box,
-        .sticky-header .support-box {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-
-        .main-header .support-box .icon,
-        .sticky-header .support-box .icon {
-            display: flex;
-            align-items: center;
-            line-height: 0;
-        }
-
-    /* WhatsApp/chat icon at 60% of previous sizes */
-    .main-header .support-box .icon i { font-size: calc(18px * 1); }
-    .sticky-header .support-box .icon i { font-size: calc(16px * 1); }
-
-        /* Keep text tight and inline */
-        .main-header .support-box h3,
-        .sticky-header .support-box h5,
-        .sticky-header .support-box span {
-            margin: 0;
-            line-height: 1.1;
-            display: inline-block;
-        }
-
-    .book-now-btn {
-            border-radius: 9999px; /* fully rounded corners */
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            height: 44px; /* similar visual size as the chat icon */
-            padding: 0 16px; /* pill shape */
-            line-height: 1;
-            white-space: nowrap;
-            text-decoration: none;
-            border: none !important;
-            box-shadow: none !important;
-            transition: none !important;
-    }
-
-    /* Slightly tighter padding in the compact sticky header */
-    .sticky-header .book-now-btn {
-            height: 40px;
-            padding: 0 14px;
-    }
-
-        /* Remove theme underline/border/animated pseudo-elements */
-        .book-now-btn::before,
-        .book-now-btn::after {
-            content: none !important;
-            display: none !important;
-        }
-
-        /* Disable hover animation and keep same appearance */
-        .book-now-btn:hover,
-        .book-now-btn:focus,
-        .book-now-btn:active {
-            text-decoration: none;
-            border: none !important;
-            box-shadow: none !important;
-            transform: none !important;
-        }
-</style>
 
 
 <!-- page wrapper -->
@@ -144,9 +63,9 @@
                     </div>
                     <div class="menu-right-content">
                         <div class="support-box">
-                            <h3><a href="tel:254708097190">☎️ +254 708 097 190</a></h3>
+                            <div class="icon"><i class="flaticon-chat"></i></div>
+                            <h3><a href="tel:254708097190">+254 708 097 190</a></h3>
                         </div>
-                        <a class="theme-btn btn-one book-now-btn" href="https://ol-maisor-ngriki-and-ngiliriti-camps.s.zafari.africa/search?property=JTEB8RB2&checkin=2025-09-09&checkout=2025-09-10">Book Online Now</a>
                     </div>
                 </div>
             </div>
@@ -161,9 +80,10 @@
                     </div>
                     <div class="menu-right-content">
                         <div class="support-box">
-                            <h5><a href="tel:254708097190">☎️ +254 708 097 190</a></h5>
+                            <div class="icon"><i class="flaticon-chat"></i></div>
+                            <span>Whatsapp</span>
+                            <h5><a href="tel:254708097190">+254 708 097 190</a></h5>
                         </div>
-                        <a class="theme-btn btn-one book-now-btn" href="https://ol-maisor-ngriki-and-ngiliriti-camps.s.zafari.africa/search?property=JTEB8RB2&checkin=2025-09-09&checkout=2025-09-10">Book Online Now</a>
                     </div>
                 </div>
             </div>
@@ -319,9 +239,8 @@
                     </div>
                 </div>
                 <div class="lower-text centred">
-                    <span>Call or Book Online Now</span>
+                    <span>Call or Whatsapp to book</span>
                     <h3><a href="tel:254708097190">+254 708 097 190</a></h3>
-                    <a class="theme-btn btn-one book-now-btn" href="https://ol-maisor-ngriki-and-ngiliriti-camps.s.zafari.africa/search?property=JTEB8RB2&checkin=2025-09-09&checkout=2025-09-10">Book Online Now</a>
                 </div>
             </div>
         </section>
@@ -645,10 +564,10 @@
             <div class="auto-container">
                 <div class="inner-container">
                     <div class="text">
-                        <h2>Book Right Now!</h2>
+                        <h2>Call Right Now to Book!</h2>
                     </div>
                     <div class="btn-box">
-                        <a class="theme-btn btn-one book-now-btn" href="https://ol-maisor-ngriki-and-ngiliriti-camps.s.zafari.africa/search?property=JTEB8RB2&checkin=2025-09-09&checkout=2025-09-10">Book Online Now</a>
+                        <a href="tel:254708097190" class="theme-btn btn-one">+254 708 097 190</a></a>
                     </div>
                 </div>
             </div>
@@ -812,7 +731,7 @@
                         </div>
                         <figure class="footer-logo"><a href="index.html"><img data-sizes="auto"src="assets/images/footer-logo.png"
                                     alt=""></a></figure>
-                        <div class="te/xt">
+                        <div class="text">
                             <h5>Call Anytime</h5>
                             <h3><a href="tel:254708097190">+254 708 097 190</a></h3>
                         </div>
